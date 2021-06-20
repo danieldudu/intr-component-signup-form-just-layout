@@ -74,6 +74,8 @@ main {
 
 
 .form-area {
+  max-width: 500px;
+
   .banner {
     padding: 1.8rem 3rem;
     text-align: center;
@@ -81,7 +83,11 @@ main {
     background-color: $dark-blue;
     border-radius: 1rem;
     box-shadow: 0 6px 2px hsla(0, 0, 0, 0.3) ;
+
+    @media (min-width: 900px) {
+      padding: 1rem;
   }
+}
 
   .form-wrapper {
     background-color: #f4f4f4;
@@ -170,6 +176,6 @@ button {
 footer {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-
- 
+  position: fixed;
+  bottom: 0;
 }
