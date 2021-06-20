@@ -44,7 +44,7 @@ main {
 
   @media (min-width: 900px) {
     flex-direction: row;
-    max-width: 1440px;
+    max-width: 1200px;
   }
   
 }
@@ -53,18 +53,19 @@ main {
   flex: 0 50%;
 
   @media (min-width: 900px){
-    flex: 0 0 50%;
+    flex: 0 1 50%;
   }
 }
 
 .content {
-  padding: 3rem;
+  padding: 1rem;
 
   h1, p {
     text-align: center;
 
     @media (min-width: 900px) {
       text-align: left; 
+      // padding: 1rem;
   }
 }
 

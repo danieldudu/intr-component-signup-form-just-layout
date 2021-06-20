@@ -127,7 +127,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    max-width: 1440px;
+    max-width: 1200px;
   }
 }
 
@@ -140,13 +140,13 @@ main {
 @media (min-width: 900px) {
   .content, .form-area {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
   }
 }
 
 .content {
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .content h1, .content p {
