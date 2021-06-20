@@ -188,7 +188,7 @@ main {
 
 @media (min-width: 900px) {
   .form-area {
-    padding-top: 30rem;
+    padding-top: 5rem;
     height: 90vh;
   }
 }
