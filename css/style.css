@@ -128,7 +128,6 @@ main {
         -ms-flex-direction: row;
             flex-direction: row;
     max-width: 1440px;
-    gap: 4rem;
   }
 }
 
@@ -179,6 +178,7 @@ main {
 @media (min-width: 900px) {
   .content p {
     padding: unset;
+    max-width: 55ch;
   }
 }
 
@@ -188,7 +188,7 @@ main {
 
 @media (min-width: 900px) {
   .form-area {
-    padding-top: 10rem;
+    padding-top: 30rem;
     height: 90vh;
   }
 }
@@ -217,7 +217,7 @@ main {
 
 @media (min-width: 900px) {
   .form-area .form-wrapper {
-    height: 60%;
+    height: auto;
   }
 }
 
@@ -240,14 +240,19 @@ main {
 }
 
 .form-area .form-wrapper form .field:not(:first-of-type) {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .form-area .form-wrapper form .field {
   padding: 0.7rem 0.9rem;
   border: 1px solid #b9b6d3;
-  outline: none;
   width: 90%;
+}
+
+@media (min-width: 900px) {
+  .form-area .form-wrapper form .field {
+    padding: 1.3rem 1rem;
+  }
 }
 
 .form-area .form-wrapper form .field::-webkit-input-placeholder {
@@ -270,13 +275,17 @@ main {
   font-weight: 700;
 }
 
+.form-area .form-wrapper form .field:active {
+  outline: 1px solid #6055a5;
+}
+
 button {
   width: 90%;
   background-color: #38cc8c;
   padding: 0.8rem 2rem;
   border: none;
   border-radius: 0.3rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: 500;

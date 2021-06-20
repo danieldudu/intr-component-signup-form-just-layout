@@ -45,7 +45,6 @@ main {
   @media (min-width: 900px) {
     flex-direction: row;
     max-width: 1440px;
-    gap: 4rem;
   }
   
 }
@@ -84,6 +83,7 @@ main {
 
     @media (min-width: 900px) {
       padding: unset;
+      max-width: 55ch;
     }
   }
   
@@ -94,7 +94,7 @@ main {
   max-width: 500px;
   
   @media (min-width: 900px) {
-    padding-top: 10rem;
+    padding-top: 30rem;
     height: 90vh ;
   }
 
@@ -118,7 +118,7 @@ main {
 
     @media (min-width: 900px) {
       
-      height: 60%;
+      height: auto;
       
     }
     
@@ -132,18 +132,25 @@ main {
       height: auto;
 
       .field:not(:first-of-type) {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
       }
 
       .field {
         padding: 0.7rem 0.9rem;
         border: 1px solid $gray-blue;
-        outline: none;
         width: 90%;
+
+       @media (min-width:900px) {
+         padding: 1.3rem 1rem;
+       }
 
         &::placeholder {
           font-size: 1rem;
           font-weight: 700;
+        }
+
+        &:active {
+          outline: 1px solid $dark-blue;
         }
 
         
@@ -158,13 +165,12 @@ button {
   padding: 0.8rem 2rem;
   border: none;
   border-radius: 0.3rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: 500;
   color: #fff;
   cursor: pointer;
-
 }
 
 .disclaimer {
