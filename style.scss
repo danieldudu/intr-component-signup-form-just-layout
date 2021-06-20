@@ -1,0 +1,175 @@
+@import "reset";
+
+// Variables 
+
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$dark-blue: hsl(248, 32%, 49%);
+$gray-blue: hsl(246, 25%, 77%);
+
+
+// Font reset to 10px in order to work easier with rem units
+html {
+  font-size: 62.5%;
+}
+
+// Body styling and revert to 16px = 1.6rem
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  background: url(/images/bg-intro-mobile.png), $red;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+main { 
+  max-width: 375px;
+  // min-height: 100%;
+  
+  padding: 4rem 2rem 3rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    max-width: 1440px;
+    gap: 4rem;
+  }
+  
+}
+
+.content, .form-area {
+  flex: 0 50%;
+}
+
+.content {
+  h1, p {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 2.3rem;
+  }
+
+  p {
+    padding: 0 2.5rem;
+    margin-bottom: 5rem;
+  }
+  
+}
+
+
+.form-area {
+  .banner {
+    padding: 1.8rem 3rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    background-color: $dark-blue;
+    border-radius: 1rem;
+    box-shadow: 0 6px 2px hsla(0, 0, 0, 0.3) ;
+  }
+
+  .form-wrapper {
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    color:$gray-blue;
+    
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 1rem ;
+      height: auto;
+
+      .field:not(:first-of-type) {
+        margin-top: 1.5rem;
+      }
+
+      .field {
+        padding: 0.7rem 0.9rem;
+        border: 1px solid $gray-blue;
+        outline: none;
+        width: 90%;
+
+        &::placeholder {
+          font-size: 1rem;
+          font-weight: 700;
+        }
+
+        
+      }
+    }
+  }
+}
+
+button {
+  width: 90%;
+  background-color: $green;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  padding: 0 5rem;
+  line-height: 1.5;
+
+  
+
+  
+}
+
+* a {
+
+  text-decoration: none;
+  font-weight: 700;
+  color: $red;
+  
+
+  &:visited {
+    color: $green;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $dark-blue;
+  }
+
+ 
+}
+
+footer {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+
+ 
+}
