@@ -138,8 +138,26 @@ main {
           flex: 0 50%;
 }
 
+@media (min-width: 900px) {
+  .content, .form-area {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+.content {
+  padding: 3rem;
+}
+
 .content h1, .content p {
   text-align: center;
+}
+
+@media (min-width: 900px) {
+  .content h1, .content p {
+    text-align: left;
+  }
 }
 
 .content h1 {
@@ -148,13 +166,31 @@ main {
   margin-bottom: 2.3rem;
 }
 
+@media (min-width: 900px) {
+  .content h1 {
+    font-size: 6rem;
+  }
+}
+
 .content p {
-  padding: 0 2.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 900px) {
+  .content p {
+    padding: unset;
+  }
 }
 
 .form-area {
   max-width: 500px;
+}
+
+@media (min-width: 900px) {
+  .form-area {
+    padding-top: 10rem;
+    height: 90vh;
+  }
 }
 
 .form-area .banner {
@@ -177,6 +213,12 @@ main {
   background-color: #f4f4f4;
   border-radius: 1rem;
   color: #b9b6d3;
+}
+
+@media (min-width: 900px) {
+  .form-area .form-wrapper {
+    height: 60%;
+  }
 }
 
 .form-area .form-wrapper form {

@@ -52,22 +52,39 @@ main {
 
 .content, .form-area {
   flex: 0 50%;
+
+  @media (min-width: 900px){
+    flex: 0 0 50%;
+  }
 }
 
 .content {
+  padding: 3rem;
+
   h1, p {
     text-align: center;
+
+    @media (min-width: 900px) {
+      text-align: left; 
   }
+}
 
   h1 {
     font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 2.3rem;
+
+    @media (min-width: 900px) {
+      font-size: 6rem;
+    }
   }
 
   p {
-    padding: 0 2.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+
+    @media (min-width: 900px) {
+      padding: unset;
+    }
   }
   
 }
@@ -75,6 +92,11 @@ main {
 
 .form-area {
   max-width: 500px;
+  
+  @media (min-width: 900px) {
+    padding-top: 10rem;
+    height: 90vh ;
+  }
 
   .banner {
     padding: 1.8rem 3rem;
@@ -93,6 +115,12 @@ main {
     background-color: #f4f4f4;
     border-radius: 1rem;
     color:$gray-blue;
+
+    @media (min-width: 900px) {
+      
+      height: 60%;
+      
+    }
     
 
     form {
